@@ -5,6 +5,17 @@
 #include <stdio.h>
 #include <string.h>
 
+int lsh_execute(char **args)
+{
+  int i;
+
+  if (args[0] == NULL) {
+    
+    return 1;
+  }
+	
+}
+
 char *lsh_read_line(void)
 {
 #ifdef LSH_USE_STD_GETLINE
