@@ -95,7 +95,6 @@ int lsh_execute(char **args)
       return (*builtin_func[i])(args);
     }
   }
-
   return lsh_launch(args);	
 }
 
@@ -185,7 +184,6 @@ char **lsh_split_line(char *line)
   return tokens;
 }
 
-
 void lsh_loop(void)
 {
   char *line;
@@ -204,9 +202,7 @@ void lsh_loop(void)
 }
 
 int main(int argc, char **argv)
-{
- 
+{ 
   lsh_loop();
-
   return EXIT_SUCCESS;
 }
