@@ -44,8 +44,6 @@ char *lsh_read_line(void)
       buffer[position] = c;
     }
     position++;
-
-    
     if (position >= bufsize) {
       bufsize += LSH_RL_BUFSIZE;
       buffer = realloc(buffer, bufsize);
