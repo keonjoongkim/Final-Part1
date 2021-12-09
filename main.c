@@ -20,6 +20,11 @@ int lsh_help(char **args)
   return 1;
 }
 
+int lsh_exit(char **args)
+{
+  return 0;
+}
+
 int lsh_launch(char **args)
 {
   pid_t pid;
